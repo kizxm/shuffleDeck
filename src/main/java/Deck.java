@@ -5,8 +5,15 @@ public class Deck {
 
     Deck() {
 
+        String[] deck = new String[sv];
+        for (int i = 0; i < 13; i++) {
+            for (int x = 0; x < 4; x++) {
+                deck[suits.length * i + x] = values[i] + " of " + suits[x];
+            }
+        }
+
     }
 
-    
+
 
 }
