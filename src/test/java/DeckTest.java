@@ -30,7 +30,7 @@ public class DeckTest {
 
     @Test
     public void thirteenValues() throws Exception {
-        assertEquals(14, testDeck.getValues().length);
+        assertEquals(13, testDeck.getValues().length);
     }
 
 }
