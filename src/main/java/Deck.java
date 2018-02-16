@@ -1,7 +1,7 @@
 public class Deck {
     private String[] suits = {"♣ Clubs", "♦ Diamonds", "❤ Hearts", "♠ Spades"};
     private String[] values = {"Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"};
-    public int sv = 2;
+    public int sv = suits.length * values.length;
 
     Deck() {
 
@@ -11,6 +11,15 @@ public class Deck {
                 deck[suits.length * i + x] = values[i] + " of " + suits[x];
             }
         }
+
+        for (int i = 0; i < sv; i++) {
+            int n = i + (int) (Math.random() * (sv - i));
+            String temporaryDeck = deck[n];
+            deck[n] = deck[i];
+            deck[i] = temporaryDeck;
+        }
+
+
 
     }
 
