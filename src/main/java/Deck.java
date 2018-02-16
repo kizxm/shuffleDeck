@@ -19,10 +19,11 @@ public class Deck {
             deck[i] = temporaryDeck;
         }
 
-
-
+        for (int i = 0; i < sv; i++) {
+            System.out.println(deck[i]);
+        }
     }
 
-
-
+    public String[] getSuits() { return suits; }
+    public String[] getValues() { return values; }
 }
