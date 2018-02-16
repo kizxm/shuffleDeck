@@ -15,7 +15,7 @@ public class DeckTest {
 
     @Test
     public void deckExists() throws Exception {
-        assertNotEquals(true, testDeck instanceof Deck);
+        assertEquals(true, testDeck instanceof Deck);
     }
 
 }
