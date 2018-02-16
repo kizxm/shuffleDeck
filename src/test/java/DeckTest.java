@@ -20,7 +20,7 @@ public class DeckTest {
 
     @Test
     public void fourSuits() throws Exception {
-        assertEquals(5, testDeck.getSuits().length);
+        assertEquals(4, testDeck.getSuits().length);
     }
 
 }
