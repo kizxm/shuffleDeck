@@ -33,4 +33,13 @@ public class DeckTest {
         assertEquals(13, testDeck.getValues().length);
     }
 
+    @Test
+    public void notUnderThirteenValues() throws Exception {
+        assertNotEquals(12, testDeck.getValues().length);
+    }
+
+    @Test
+    public void deskIs52Cards() throws Exception {
+        assertEquals(53, testDeck.deckSize());
+    }
 }
