@@ -26,4 +26,11 @@ public class Deck {
 
     public String[] getSuits() { return suits; }
     public String[] getValues() { return values; }
+
+    public int deckSize() { return sv; }
+
+    public String resultsSize() {
+        Deck testDeck1 = new Deck();
+        return testDeck1.toString();
+    }
 }
