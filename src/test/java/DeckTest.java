@@ -40,6 +40,6 @@ public class DeckTest {
 
     @Test
     public void deskIs52Cards() throws Exception {
-        assertEquals(53, testDeck.deckSize());
+        assertEquals(52, testDeck.deckSize());
     }
 }
