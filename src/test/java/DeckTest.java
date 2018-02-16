@@ -23,4 +23,14 @@ public class DeckTest {
         assertEquals(4, testDeck.getSuits().length);
     }
 
+    @Test
+    public void notUnderFourSuits() throws Exception {
+        assertNotEquals(3, testDeck.getSuits().length);
+    }
+
+    @Test
+    public void thirteenValues() throws Exception {
+        assertEquals(14, testDeck.getValues().length);
+    }
+
 }
